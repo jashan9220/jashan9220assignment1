@@ -152,10 +152,11 @@
 </head>
 <body>
     <nav>
-        <a href="C:\Users\jasha\OneDrive\Desktop\Tractor Website\index.html">Home</a>
-        <a href="C:\Users\jasha\OneDrive\Desktop\Tractor Website\tractors.html">Tractors</a>
-        <a href="C:\Users\jasha\OneDrive\Desktop\Tractor Website\contact.html">Contact</a>
-        <a href="C:\Users\jasha\OneDrive\Desktop\Tractor Website\about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="tractors.html">Tractors</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="aboutme.html">About me</a>
     </nav>
     <header>
         <h1>Contact Us</h1>
@@ -189,29 +190,5 @@
             </div>
         </section>
     </div>
-
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Your message has been sent successfully!');
-            this.reset();
-        });
-
-      
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href.startsWith('C:\\')) {
-                
-                    return;
-                } else {
-                    e.preventDefault();
-                    document.querySelector(href).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
